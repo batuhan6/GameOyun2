@@ -12,10 +12,10 @@ namespace GameOyun2
             Customer customer1 = new Customer()
             {
                 Id = 1,
-                FirstName = "Batuhan",
+                FirstName = "Buket",
                 LastName = "Baykal",
-                NationalityId = "54406053276",
-                DateOfBirth = new DateTime(1993, 11, 18)
+                NationalityId = "544234245",
+                DateOfBirth = new DateTime(1968, 11, 18)
             };
             CustomerManager customerManager = new CustomerManager(new MernisServiceAdapter());
             customerManager.Save(customer1);
