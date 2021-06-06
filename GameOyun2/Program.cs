@@ -15,7 +15,7 @@ namespace GameOyun2
                 FirstName = "Buket",
                 LastName = "Baykal",
                 NationalityId = "544234245",
-                DateOfBirth = new DateTime(1968, 11, 18)
+                DateOfBirth = new DateTime(1933, 3, 8)
             };
             CustomerManager customerManager = new CustomerManager(new MernisServiceAdapter());
             customerManager.Save(customer1);
