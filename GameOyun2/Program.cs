@@ -29,7 +29,18 @@ namespace GameOyun2
             };
             GameManager gameManager = new GameManager();
             gameManager.Save(game1);
+            Console.WriteLine("---------------");
 
+            Campaign campaign1 = new Campaign();
+            campaign1.CampaignName = "SommerRabat";
+            campaign1.DiscountRate = 20;
+
+
+            CampaignManager cm = new CampaignManager();
+            cm.Save(campaign1);
+
+            OrderManager om = new OrderManager();
+            om.Order(customer1, game1, campaign1);
         }
     }
 }
